@@ -3,7 +3,7 @@
 ## LongMemEval
 
 ### Prep steps (DO NOT SKIP)
-Download the LongMemEval dataset, create folder in ./longmemeval/data, and extract it there.
+Download the [LongMemEval dataset](https://drive.google.com/file/d/1zJgtYRFhOh5zDQzzatiddfjYhFSnyQ80/view?usp=sharing), uncompress it and create folder in ./longmemeval/data, and extract it there.
 
 ### Execution Steps
 #### Detailed
