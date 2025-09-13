@@ -1,4 +1,5 @@
 **/*.log
+!**/benchmark_output*.log
 **/*.env*
 !**/.env.example
 longmemeval/src/evaluation/checkpoints
