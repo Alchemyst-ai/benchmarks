@@ -1,0 +1,5 @@
+**/*.log
+**/*.env*
+!**/.env.example
+longmemeval/src/evaluation/checkpoints
+longmemeval/data
