@@ -1,6 +1,7 @@
 # Alchemyst Benchmarks
 
 ## LongMemEval
+[**Benchmark results**](./longmemeval/src/evaluation/benchmark_output.log)
 
 ### Prep steps (DO NOT SKIP)
 Download the [LongMemEval dataset](https://drive.google.com/file/d/1zJgtYRFhOh5zDQzzatiddfjYhFSnyQ80/view?usp=sharing), uncompress it and create folder in ./longmemeval/data, and extract it there.
