@@ -1,6 +1,7 @@
 # Alchemyst Benchmarks
 
 ## LongMemEval
+[**Original Repo**](https://github.com/xiaowu0162/LongMemEval?tab=readme-ov-file)
 [**Benchmark results**](./longmemeval/src/evaluation/benchmark_output.log)
 
 ### Prep steps (DO NOT SKIP)
