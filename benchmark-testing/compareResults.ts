@@ -4,6 +4,13 @@ const grepDir = "./grepResult";
 const alchemystDir = "./alchemystSearchResult";
 
 
+/**
+ * Loads all JSON files from the given directory and indexes them by their numeric `id` field.
+ * Files that do not contain a numeric `id` property are skipped.
+ *
+ * @param dir - Path to the directory containing JSON result files.
+ * @returns A map from `id` to the parsed JSON content for each file.
+ */
 function loadResultsById(dir: string) {
   const files = fs.readdirSync(dir).filter(f => f.endsWith(".json"));
   const map = new Map<number, any>();
