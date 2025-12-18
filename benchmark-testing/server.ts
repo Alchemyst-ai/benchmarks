@@ -41,7 +41,7 @@ async function main() {
       },
     });
   }
-  console.log(contents.length)
+  console.log(contents.length);
   for (let i = 0; i < contents.length; i += 5) {
     const batch = contents.slice(i, i + 5);
 
