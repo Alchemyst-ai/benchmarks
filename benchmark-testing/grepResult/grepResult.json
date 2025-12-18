@@ -1,0 +1,112 @@
+{
+  "1": {
+    "id": 1,
+    "query": "How does the plugin system work in opencode?",
+    "tool": "grep",
+    "keyword": "plugin system",
+    "tokens": {
+      "query": 10,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "2": {
+    "id": 2,
+    "query": "How do we add an agent to opencode?",
+    "tool": "grep",
+    "keyword": "add agent opencode",
+    "tokens": {
+      "query": 10,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "3": {
+    "id": 3,
+    "query": "How does opencode manage tools internally?",
+    "tool": "grep",
+    "keyword": "opencode internal tool management",
+    "tokens": {
+      "query": 8,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "4": {
+    "id": 4,
+    "query": "How do agents communicate with tools in opencode?",
+    "tool": "grep",
+    "keyword": "communicate with tools",
+    "tokens": {
+      "query": 10,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "5": {
+    "id": 5,
+    "query": "Where is the main entry point of opencode?",
+    "tool": "grep",
+    "keyword": "opencode main",
+    "tokens": {
+      "query": 10,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "6": {
+    "id": 6,
+    "query": "What environment variables does opencode use?",
+    "tool": "grep",
+    "keyword": "opencode environment variables",
+    "tokens": {
+      "query": 8,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "7": {
+    "id": 7,
+    "query": "What is the execution flow of a request in opencode?",
+    "tool": "grep",
+    "keyword": "opencode request execution flow",
+    "tokens": {
+      "query": 12,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "8": {
+    "id": 8,
+    "query": "What are common failure points in opencode plugins?",
+    "tool": "grep",
+    "keyword": "opencode plugins",
+    "tokens": {
+      "query": 10,
+      "output": 45
+    },
+    "output": "./opencode/packages/web/src/content/docs/ecosystem.mdx:43:| [opencode plugin template](https://github.com/zenobi-us/opencode-plugin-template/) | Template for building OpenCode plugins                          |\r\n"
+  },
+  "9": {
+    "id": 9,
+    "query": "How does opencode handle context and memory?",
+    "tool": "grep",
+    "keyword": "opencode context memory",
+    "tokens": {
+      "query": 9,
+      "output": 3
+    },
+    "output": "No matches found"
+  },
+  "10": {
+    "id": 10,
+    "query": "How can a custom agent be registered in opencode?",
+    "tool": "grep",
+    "keyword": "custom agent registered opencode",
+    "tokens": {
+      "query": 11,
+      "output": 3
+    },
+    "output": "No matches found"
+  }
+}

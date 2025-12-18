@@ -1,0 +1,12 @@
+[
+    {"content": "How does the plugin system work in opencode?", "id": 1 },
+    {"content": "How do we add an agent to opencode?", "id": 2},
+    {"content": "How does opencode manage tools internally?", "id": 3},
+    {"content": "How do agents communicate with tools in opencode?", "id": 4},
+    {"content": "Where is the main entry point of opencode?", "id": 5},
+    {"content": "What environment variables does opencode use?", "id": 6},
+    {"content": "What is the execution flow of a request in opencode?", "id": 7},
+    {"content": "What are common failure points in opencode plugins?", "id": 8},
+    {"content": "How does opencode handle context and memory?", "id": 9},
+    {"content": "How can a custom agent be registered in opencode?", "id": 10}
+]

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@alchemystai/sdk": "^0.8.0",
+    "@google/generative-ai": "^0.24.1",
+    "glob": "^13.0.0",
+    "tiktoken": "^1.0.22"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3"
+  }
+}

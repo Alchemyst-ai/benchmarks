@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "query": "How does the plugin system work in opencode?",
+    "grep": {
+      "keyword": "plugin system",
+      "tokens": 13,
+      "outputLength": 16
+    },
+    "alchemyst": {
+      "tokens": 265,
+      "outputLength": 922
+    }
+  },
+  {
+    "id": 2,
+    "query": "How do we add an agent to opencode?",
+    "grep": {
+      "keyword": "add an agent",
+      "tokens": 13,
+      "outputLength": 16
+    },
+    "alchemyst": {
+      "tokens": 307,
+      "outputLength": 1282
+    }
+  },
+  {
+    "id": 3,
+    "query": "How does opencode manage tools internally?",
+    "grep": {
+      "keyword": "tools",
+      "tokens": 1606,
+      "outputLength": 5000
+    },
+    "alchemyst": {
+      "tokens": 340,
+      "outputLength": 1564
+    }
+  },
+  {
+    "id": 4,
+    "query": "How do agents communicate with tools in opencode?",
+    "grep": {
+      "keyword": "communication",
+      "tokens": 746,
+      "outputLength": 3646
+    },
+    "alchemyst": {
+      "tokens": 360,
+      "outputLength": 1700
+    }
+  },
+  {
+    "id": 5,
+    "query": "Where is the main entry point of opencode?",
+    "grep": {
+      "keyword": "opencode",
+      "tokens": 2058,
+      "outputLength": 5000
+    },
+    "alchemyst": {
+      "tokens": 252,
+      "outputLength": 851
+    }
+  },
+  {
+    "id": 6,
+    "query": "What environment variables does opencode use?",
+    "grep": {
+      "keyword": "environment variables",
+      "tokens": 946,
+      "outputLength": 4374
+    },
+    "alchemyst": {
+      "tokens": 95,
+      "outputLength": 329
+    }
+  },
+  {
+    "id": 7,
+    "query": "What is the execution flow of a request in opencode?",
+    "grep": {
+      "keyword": "execution flow",
+      "tokens": 15,
+      "outputLength": 16
+    },
+    "alchemyst": {
+      "tokens": 266,
+      "outputLength": 1078
+    }
+  },
+  {
+    "id": 8,
+    "query": "What are common failure points in opencode plugins?",
+    "grep": {
+      "keyword": "failure points",
+      "tokens": 32,
+      "outputLength": 101
+    },
+    "alchemyst": {
+      "tokens": 338,
+      "outputLength": 1181
+    }
+  },
+  {
+    "id": 9,
+    "query": "How does opencode handle context and memory?",
+    "grep": {
+      "keyword": "opencode",
+      "tokens": 2057,
+      "outputLength": 5000
+    },
+    "alchemyst": {
+      "tokens": 343,
+      "outputLength": 1554
+    }
+  },
+  {
+    "id": 10,
+    "query": "How can a custom agent be registered in opencode?",
+    "grep": {
+      "keyword": "custom agent",
+      "tokens": 14,
+      "outputLength": 16
+    },
+    "alchemyst": {
+      "tokens": 191,
+      "outputLength": 816
+    }
+  }
+]

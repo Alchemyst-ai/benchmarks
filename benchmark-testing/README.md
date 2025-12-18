@@ -1,0 +1,2 @@
+Tested on the opencode codebase
+commit id: b07a47fc89b6ca662c4f6b536d6f0c0ec5890f89
