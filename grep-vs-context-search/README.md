@@ -1,73 +1,138 @@
-Tested on the opencode codebase
-commit id: b07a47fc89b6ca662c4f6b536d6f0c0ec5890f89
+# Benchmark: `grep` vs Alchemyst Context Search (OpenCode)
 
-Benchmark: grep vs Alchemyst Context Search (opencode)
+This benchmark evaluates **traditional keyword-based search (`grep`)** against **semantic context search (Alchemyst)** on a real-world codebase: **OpenCode**.
 
-Folder structure:
+The objective is to measure practical differences in:
+
+* Relevance of retrieved context
+* Noise vs. signal in results
+* Token usage and cost trade-offs
+* Usefulness for understanding large repositories
+
+---
+
+## Repository Structure
+
+```
 benchmark-testing/
 ├── benchmark_grep.ts
 ├── benchmark_alchemystSearch.ts
 ├── compareResults.ts
 ├── mergeAlchemystResults.ts
 ├── queries.json
-├── README.md
+└── README.md
+```
 
-Prerequisites
-- Node.js or Bun
+---
 
-Environment variables:
-export GEMINI_API_KEY=your_gemini_key
-export ALCHEMYST_AI_API_KEY=your_alchemyst_key
+## Prerequisites
 
-Step 1: Define queries
-Edit queries.json to define the benchmark questions.
+* **Node.js** or **Bun**
+* **OpenCode repository** cloned locally
+
+---
+
+## Environment Variables
+
+Before running the benchmarks, export the following environment variables:
+
+```bash
+export GEMINI_API_KEY=your_gemini_api_key
+export ALCHEMYST_AI_API_KEY=your_alchemyst_api_key
+```
+
+---
+
+## Step 1: Define Benchmark Queries
+
+Edit `queries.json` to specify the questions used for the benchmark.
+
+```json
 [
-    {"content": "How does the plugin system work in opencode?", "id": 1 },
-    {"content": "How do we add an agent to opencode?", "id": 2},
+  { "id": 1, "content": "How does the plugin system work in opencode?" },
+  { "id": 2, "content": "How do we add an agent to opencode?" }
 ]
-Each query must have:
-- a unique id
-- a natural-language question
+```
 
-Step 2: Run the grep benchmark
+Each query must include:
+
+* A **unique numeric ID**
+* A **natural-language question**
+
+---
+
+## Step 2: Run the `grep` Benchmark
+
 This script:
-- converts each question into a keyword using Gemini
-- runs grep on the opencode repository
-- stores results by query ID
-Run:
+
+* Converts each natural-language question into keywords using **Gemini**
+* Runs `grep` against the OpenCode repository
+* Stores results mapped to each query ID
+
+### Run
+
+```bash
 bun benchmark_grep.ts
-Output:
-- Individual result files in grepResult/
-- Or a merged grepResult.json (depending on setup)
+```
 
-Step 3: Run the Alchemyst benchmark
+### Output
+
+* Individual result files in `grepResult/`
+* Or a merged `grepResult.json` (depending on configuration)
+
+---
+
+## Step 3: Run the Alchemyst Context Search Benchmark
+
 This script:
-- sends the full question to Alchemyst
-- performs semantic context search
-- filters results to the opencode-benchmark group
-- records token usage
-Run:
+
+* Sends the full natural-language question directly to **Alchemyst**
+* Performs **semantic context search**
+* Filters results to the `opencode-benchmark` context group
+* Records token usage per query
+
+### Run
+
+```bash
 bun benchmark_alchemystSearch.ts
-Output:
-- Individual result files in alchemystSearchResult/
-- Or a merged alchemystSearchResult.json
+```
 
-Step 5: Compare results
-To align and compare grep and Alchemyst outputs by query ID:
-Run:
+### Output
+
+* Individual result files in `alchemystSearchResult/`
+* Or a merged `alchemystSearchResult.json`
+
+---
+
+## Step 4: Compare Results
+
+To align and compare `grep` and Alchemyst outputs by query ID, run:
+
+```bash
 bun compareResults.ts
-This produces a comparison file showing:
-- matched queries
-- token usage
-- output size
-Only queries present on both sides are compared.
+```
 
-Notes:
-Token counts use tiktoken as an approximation
+### Comparison Includes
 
-Summary:
-1. Define queries in queries.json
-2. Run benchmark_grep.ts
-3. Run benchmark_alchemystSearch.ts
-4. Compare outputs
+* Queries present in **both** benchmarks
+* Retrieved context size
+* Token usage (Alchemyst)
+* Differences in retrieved content
 
+Only queries available on **both sides** are included in the comparison.
+
+---
+
+## Notes
+
+* Token counts are estimated using **tiktoken** and should be treated as approximations.
+* This benchmark emphasizes **real-world usability** over academic retrieval metrics.
+
+---
+
+## Summary
+
+1. Define queries in `queries.json`
+2. Run `benchmark_grep.ts`
+3. Run `benchmark_alchemystSearch.ts`
+4. Compare results with `compareResults.ts`
